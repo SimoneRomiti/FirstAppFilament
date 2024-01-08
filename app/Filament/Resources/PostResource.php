@@ -32,17 +32,19 @@ class PostResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
+            ->columns(2)
+
             ->schema([
-                TextInput::make('title')->required(),
+                TextInput::make('title')->required()->columnSpanFull(),
                 TextInput::make('slug'),
+                TagsInput::make('tags'),
                 ColorPicker::make('color'),
                 Select::make('category_id')
                 ->label('Category')
                 ->searchable()
                 ->options(Category::all()->pluck('name', 'id')),
-                MarkdownEditor::make('content')->required(),
-                FileUpload::make('thumbnail')->disk('public')->directory('thumbnails'),
-                TagsInput::make('tags'),
+                MarkdownEditor::make('content')->required()->columnSpanFull(),
+                FileUpload::make('thumbnail')->disk('public')->directory('thumbnails')->columnSpanFull(),
             ]);
     }
 

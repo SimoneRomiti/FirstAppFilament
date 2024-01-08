@@ -7,13 +7,20 @@
         "framework"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://gitlab.com/axio-studio-laravel-packages/comuni"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.0-stable",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "axiostudio/comuni": "dev-main"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

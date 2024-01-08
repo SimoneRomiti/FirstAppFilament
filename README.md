@@ -2,6 +2,10 @@
 ## Email: sr1992ei@gmail.com
 ## Password: simoneromiti
 
+# Aggiungere alla url "/admin" per visualizzare l'app.
+
+# Nel terminale prima di eseguire qualsiasi operazione devi fare "cd FirstAppFilament" per entrare nella giusta directory
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
